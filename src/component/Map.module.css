@@ -1,0 +1,48 @@
+.map {
+    font-family: Arial, sans-serif;
+}
+
+.tabList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
+
+.tabList li {
+    margin: 0;
+}
+
+.tabList button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s, background 0.3s;
+}
+
+.tabList button.active {
+    color: white;
+    background: #23c623;
+}
+
+.tabPanels section {
+    display: none;
+}
+
+.tabPanels .visible {
+    display: block;
+}
+
+.openedSection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    right: 20px;
+}
